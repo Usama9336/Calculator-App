@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+  </head>
+  <style>
+  input{
+    width:110px;
+    height: 70px;
+    background-color:grey;
+    border: none;
+    border-radius: 4px;
+  }
+  .y1{
+     height:100vh;
+     width:100vw;
+      position:relative; left:4.5rem; top:-2rem;
+  }
+  .y2{
+    border:solid yellow;
+    border-radius:4px;
+    width:30rem;
+    height:37rem;
+    background-color:green;
+    position:relative; left:24rem; top:1.7rem;
+    margin-right:0px;
+  }
+  </style>
+  <body>
+    <div class="y1">
+      <style>
+        .a1{
+          width:27.6rem;
+          height:44px;
+          border:solid blue;
+          border-radius:4px;
+          background-color:#00ffbc;
+          position:relative; left:25rem; top:-37.6rem;
+        }
+        .o1{
+          margin:0px;
+          width:30rem;
+          position:relative; left:25rem; top:-36.6rem;
+        }
+        .button1:hover{
+          color:white;
+        }
+        .button2:hover{
+          color:white;
+        }
+        .button3:hover{
+          color:white;
+        }
+        .button4:hover{
+          color:white;
+        }
+        .button5:hover{
+          color:white;
+        }
+        .button6:hover{
+          color:white;
+        }
+        .button7:hover{
+          color:white;
+        }
+        .button9:hover{
+          color:white;
+        }
+        .button0:hover{
+          color:white;
+        }
+        .button8:hover{
+          color:white;
+        }
+        .buttondiv:hover{
+          color:white;
+        }
+        .buttonmul:hover{
+          color:white;
+        }
+        .buttonadd:hover{
+          color:white;
+        }
+        .buttonmin:hover{
+          color:white;
+        }
+        .buttonc:hover{
+          color:white;
+        }
+        .sin:hover{
+          color:white;
+        }
+        .cos:hover{
+          color:white;
+        }
+        .cos1:hover{
+          color:white;
+        }
+        .sin1:hover{
+          color:white;
+        }
+        .tan:hover{
+          color:white;
+        }
+        .tan1:hover{
+          color:white;
+        }
+        .a2:hover{
+          color:white;
+        }
+        .ah:hover{
+          color:white;
+        }
+        .ans:hover{
+          color:white;
+        }
+        .name{
+          height:1px;
+        }
+        </style>
+       <p class="y2"></p>
+        <p style="position:relative; left:27rem; top:-37.03rem; font-size:35px; width:30rem;margin-right:0px;">
+          <b>SIMPLE CALCULATOR</b>
+        </p>
+      <form class="name" name="t" action="index.html" method="post">
+      <input class="a1" name="a"><br>
+    <div class="o1">
+      <input class="button1" type="button" value="1" onclick="t.a.value+='1'" style="font-size:19px; border:solid black">
+      <input class="button2" type="button" value="2" onclick="t.a.value+='2'" style="font-size: 19px; border:solid black">
+      <input class="button3" type="button" value="3" onclick="t.a.value+='3'" style="font-size: 19px; border:solid black">
+            <input class="buttonadd" type="button" value="+" onclick="t.a.value+='+'" style="background-color:#c58f31; font-size:19px;border:solid black"><br>
+              <input class="button4" type="button" value="4" onclick="t.a.value+='4'" style="font-size: 19px;border:solid black" >
+                <input  class="button5" type="button" value="5" onclick="t.a.value+='5'" style="font-size: 19px;border:solid black">
+                  <input class="button6" type="button" value="6" onclick="t.a.value+='6'" style="font-size: 19px;border:solid black">
+                    <input class="buttonmin" type="button" value="-" onclick="t.a.value+='-'"style="background-color:yellow;font-size: 19px;border:solid black;"><br>
+                      <input class="button7" type="button" value="7" onclick="t.a.value+='7'" style="font-size: 19px;border:solid black">
+                        <input class="button8" type="button" value="8" onclick="t.a.value+='8'" style="font-size: 19px;border:solid black">
+                          <input class="button9" type="button" value="9" onclick="t.a.value+='9'" style="font-size: 19px;border:solid black">
+                            <input class="buttonmul" type="button" value="x" onclick="t.a.value+='*'" style="background-color:red;font-size: 19px;border:solid black"><br>
+                              <input class="buttonc" type="button" value="C" onclick="t.a.value=' '" style="background-color:blue;font-size: 19px;border:solid black">
+                                <input class="button0" type="button" value="0" onclick="t.a.value+='0'" style="font-size: 19px;border:solid black">
+                                  <input class="buttondiv" type="button" value="/" onclick="t.a.value+='/'" style="background-color:orange; font-size: 19px;border:solid black">
+                                    <input class="sin" type="button" value="Sin()" onclick="t.a.value=eval(Math.sin((t.a.value)*(Math.PI/180)))" style="background-color:orange; font-size: 19px;border:solid black">
+                                    <input class="cos" type="button" value="Cos()" onclick="t.a.value=eval(Math.cos((t.a.value)*(Math.PI/180)))" style="background-color:green; font-size: 19px;border:solid black">
+                                    <input class="tan" type="button" value="Tan()" onclick="t.a.value=eval(Math.tan((t.a.value)*(Math.PI/180)))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                    <input class="sin1" type="button" value="Sin^-1()" onclick="t.a.value=eval((Math.asin(t.a.value))*(180/Math.PI))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                      <input class="cos1" type="button" value="cos^-1()" onclick="t.a.value=eval((Math.acos(t.a.value))*(180/Math.PI))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                        <input class="tan1" type="button" value="Tan^-1()" onclick="t.a.value=eval((Math.atan(t.a.value))*(180/Math.PI))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                        <input class="a2" type="button" value="a^2" onclick="t.a.value=eval(Math.pow(t.a.value,2))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                          <input class="ah" type="button" value="a^1/2" onclick="t.a.value=eval(Math.pow(t.a.value,(1/2)))" style="background-color:yellow; font-size: 19px;border:solid black">
+                                    <input class="ans" type="button" value="ANS" onclick="t.a.value=eval(t.a.value)" style="background-color:#a4db6e; font-size: 19px;border:solid black">
+                                    </div>
+      </form>
+    </div>
+  </body>
+</html>
